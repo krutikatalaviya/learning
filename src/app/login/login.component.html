@@ -1,0 +1,81 @@
+<!-- <form #loginForm="ngForm" (ngSubmit)=userLogin() class="form">
+        <div class="input-group">
+            <input type="text" name="user" placeholder="Enter Name" ngModel><br><br>
+            <input type="password" name="password" placeholder="Enter password" ngModel><br><br>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary" type="button">login</button>
+        </div>
+    </form> -->
+
+
+<!--for use-->
+<!-- <div class="container">
+    <form #loginForm="ngForm" class="form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput type="text" name="name" placeholder="Enter Name" ngModel>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" name="password" placeholder="Enter password" ngModel>
+        </mat-form-field>
+    </form>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary" (click)="userLogin(loginForm.value)">Login</button>
+    </div>
+</div> -->
+
+
+
+
+<!-- <link rel="stylesheet" href="style.css" />
+
+<div class="login-wrapper">
+    <form action="" class="form">
+        <h2>Login</h2>
+        <div class="input-group">
+            <input type="text" name="loginUser" id="loginUser" required />
+            <label for="loginUser">User Name</label>
+        </div>
+        <div class="input-group">
+            <input type="password" name="loginPassword" id="loginPassword" required />
+            <label for="loginPassword">Password</label>
+        </div>
+        <input type="submit" value="Login" class="submit-btn" />
+    </form>
+</div> -->
+
+<div class="row">
+    <div class="col-6 m-auto">
+        <div class="card m-auto">
+            <div class="card-header">
+                Login
+            </div>
+            <div class="card-body">
+
+                <form #loginForm='ngForm'>
+                    <div class="form-group col-12">
+                        <label>Name</label>
+                        <input class="form-control" required ngModel name="username">
+                    </div>
+
+                    <div class="form-group col-12">
+                        <label>Password</label>
+                        <input class="form-control" required type="password" ngModel name="password">
+                    </div>
+                    <br>
+
+                    <div class="form-group col-12">
+                        <button [disabled]="!loginForm.valid" type="submit" class="btn btn-primary" 
+                        (click)="onLogin(loginForm.value)">Login</button>&nbsp;
+                       
+                        <button type="button" class="btn btn-secondary ml-2">Cancel</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
